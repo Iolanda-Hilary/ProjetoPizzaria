@@ -4,16 +4,22 @@ public class Pedido {
 	
 	private int numPedido;
 	private int quantidade;
-	private Double valor;
-	private Double taxa;
+	private Pizza pizza;
 	
-public Pedido(int numPedido, int quantidade, Double valor, Double taxa) {
+	public Pedido() {
+		
+	}
+	
+public Pedido(int numPedido, int quantidade,Pizza pizza) {
 		
 		this.numPedido = numPedido;
 		this.quantidade = quantidade;
-		this.valor = valor;
-		this.taxa = taxa;
+		this.pizza = pizza;
+		
+		
 	}
+
+
 
 public int getNumPedido() {
 	return numPedido;
@@ -31,20 +37,12 @@ public void setQuantidade(int quantidade) {
 	this.quantidade = quantidade;
 }
 
-public Double getValor() {
-	return valor;
+public Pizza getPizza() {
+	return pizza;
 }
 
-public void setValor(Double valor) {
-	this.valor = valor;
-}
-
-public Double getTaxa() {
-	return taxa;
-}
-
-public void setTaxa(Double taxa) {
-	this.taxa = taxa;
+public void setPizza(Pizza pizza) {
+	this.pizza = pizza;
 }
 	
 
